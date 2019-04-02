@@ -14,6 +14,7 @@ Steps to run:
 3. Start the server by ./server
 
 4.How to run a client:
+	
 	1. Execute by './client {ip address of the server in your lan'}
 	
 	2. Create multiple clients by the above command
