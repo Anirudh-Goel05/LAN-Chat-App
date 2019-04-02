@@ -7,13 +7,13 @@ Requirements to run: g++ compiler and lib-pthread
 
 Steps to run:
 
-1.First compile the server by typing 'g++ server2.cpp -lpthread -o server' in the terminal in the same directory as the file(Optional you can directly go to step 3)
+1. First compile the server by typing 'g++ server2.cpp -lpthread -o server' in the terminal in the same directory as the file(Optional you can directly go to step 3)
 
 2. Similarly compile the client(Optional you can directly go to step 3) 
 
 3. Start the server by ./server
 
-4.How to run a client:
+4. How to run a client:
 	
 	1. Execute by './client {ip address of the server in your lan'}
 	
