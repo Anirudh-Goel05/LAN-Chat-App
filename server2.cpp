@@ -81,7 +81,14 @@ void* add_send_req(void* args){
 
 
 		  	// cout<<"Message \"" << rec_msg<< "\" to send from " << x.first << " " << to_send_id<<endl;
-			
+			if(to_send_id == 0){
+				for(auto y:port_num){
+					if(y == x)
+						continue;
+					send(y.second,(void*)rec_msg,1024,0);
+				}
+				continue;
+			}
 
 		    int to_send_socketid = port_num[to_send_id];
 			int bytes_sent = send(to_send_socketid,(void*)rec_msg,1024,0);
